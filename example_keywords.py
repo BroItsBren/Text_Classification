@@ -16,3 +16,8 @@ response = natural_language_understanding.analyze(
     features=Features(keywords=KeywordsOptions(sentiment=True,emotion=True,limit=2))).get_result()
 
 print(json.dumps(response, indent=2))
+
+def some(msg):
+    print('hello' + msg)
+
+some(' world')
